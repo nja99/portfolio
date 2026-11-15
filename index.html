@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ng Jian An — Software engineer and technical product manager</title>
+    <meta
+      name="description"
+      content="Portfolio of Ng Jian An, final-year Computer Science student at NUS specialising in networking, distributed systems and parallel computing, with interests in UI/UX, FinTech and MedTech."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="./favicon.png" />
+
+    <!--
+      Theme bootstrap. Runs BEFORE React loads so the page never flashes the
+      wrong theme. It must use the same storage key as src/services/ThemeService.js.
+    -->
+    <script>
+      (function () {
+        try {
+          var hash = location.hash.toLowerCase();
+          var saved = null;
+          try { saved = localStorage.getItem('theme'); } catch (e) {}
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var start = document.documentElement.getAttribute('data-start-theme');
+          if (hash === '#dark' || (hash !== '#light' && (start === 'dark' || (!start && (saved === 'dark' || (!saved && prefersDark)))))) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
