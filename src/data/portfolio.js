@@ -295,18 +295,18 @@ const awards = [
 // ---------------------------------------------------------------------------
 const skills = [
   new SkillGroup('Languages', ['Java', 'Python', 'Dart', 'C++', 'C#', 'JavaScript', 'TypeScript', 'SQL', 'HTML/CSS']),
-  new SkillGroup('Frontend', ['React', 'Flutter (Android & cross-platform)', 'Tailwind CSS', 'JavaFX']),
-  new SkillGroup('Backend & databases', ['FastAPI', 'REST APIs', 'Firebase', 'PostgreSQL', 'MongoDB']),
-  new SkillGroup('Cloud & infrastructure', ['Google Cloud', 'Docker', 'CI/CD', 'Linux servers (VPS)', 'SSH']),
+  new SkillGroup('Frontend', ['React', 'Flutter (Android & Cross-Platform)', 'Tailwind CSS', 'JavaFX']),
+  new SkillGroup('Backend & Databases', ['FastAPI', 'REST APIs', 'Firebase', 'PostgreSQL', 'MongoDB']),
+  new SkillGroup('Cloud & Infrastructure', ['Google Cloud', 'Docker', 'CI/CD', 'Linux Servers (VPS)', 'SSH']),
   new SkillGroup('Tools', ['Git', 'Jira', 'Figma', 'Agile (Scrum)']),
-  new SkillGroup('UI & UX design', [
-    'User research and interviews',
-    'Usability testing',
-    'User journeys and flows',
-    'Interaction and visual design',
+  new SkillGroup('UI & UX Design', [
+    'User Research and Interviews',
+    'Usability Testing',
+    'User Journeys and Flows',
+    'Interaction and Visual Design',
     'Accessibility (WCAG)',
   ]),
-  new SkillGroup('Spoken', ['English', 'Mandarin (conversational)']),
+  new SkillGroup('Spoken', ['English', 'Mandarin (Conversational)']),
 ];
 
 /** The single object the whole app reads from. */
