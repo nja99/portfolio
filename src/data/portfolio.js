@@ -306,7 +306,7 @@ const skills = [
     'Interaction and visual design',
     'Accessibility (WCAG)',
   ]),
-  new SkillGroup('Spoken', ['English', 'Mandarin']),
+  new SkillGroup('Spoken', ['English', 'Mandarin (conversational)']),
 ];
 
 /** The single object the whole app reads from. */
